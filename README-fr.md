@@ -8,15 +8,6 @@ Ce programme est possible grâce à Streamlink.
 
 Pour les soutenir, veuillez effectuer une donation sur leur [page Open Collective](https://opencollective.com/streamlink)
 
-## Comment lancer le programme :
-
-- Localement :
-```python main.py```
-
-- En ligne (sur serveur repl / heroku etc...) :
-
-Un simple fork du programme avec votre compte devrait pouvoir le faire fonctionner, mais veuillez vérifier néanmoins s'il y a des configurations spécifiques.
-
 ## Fonctionnement :
 
 Ce programme fonctionne en demandant à Streamlink, en se basant sur l'URL donnée, un lien menant au flux vidéo, lisible par (quasiment !) tous les lecteurs connus à ce jour.
@@ -26,11 +17,18 @@ query-streamlink n'agit qu'en tant qu'intermédiaire entre Streamlink et l'utili
 
 Tout site internet supporté officiellement par [Streamlink](https://streamlink.github.io/plugin_matrix.html) (attention, certains sites sont restreints géographiquement)
 
-## Différentes options disponibles :
+## Paramètres :
 
 streaming-ip (obligatoire) : L'URL du site dont vous souhaitez le flux vidéo.
 
-quality (optionnel) : La qualité voulue pour ce flux. Ne pas renseigner la qualité revient à choisir la meilleure, renseigner "unsure" revient à donner toutes les qualités disponibles pour ce flux.
+## Comment lancer le programme localement :
+
+C'est simple : il vous suffit de lancer le programme en écrivant ```python main.py```
+
+## Comment déployer query-streamlink sur un service dédié :
+- Heroku : [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FLaneSh4d0w%2Fquery-streamlink) (merci à [@adrianpaniagualeon](https://github.com/adrianpaniagualeon))
+
+- Autres services (repl, glitch...) : Pour les autres services du même type, un simple fork du programme avec votre compte devrait suffire à le faire fonctionner, mais veuillez vérifier néanmoins s'il y existe des configurations spécifiques.
 
 ## Remerciements :
 
@@ -42,11 +40,8 @@ quality (optionnel) : La qualité voulue pour ce flux. Ne pas renseigner la qual
 
 - Les membres et contributeurs de Streamlink pour ce superbe logiciel.
 
+### Sites disponibles (au 28/04/2022)
 
-### Sites disponibles (au 22/11/2021)
-
-Voici les sites utilisant ce programme recensés en ligne à ce jour : 
-
-[Link-A-Stream - Hosted website (keystroke3) (WIP)](https://linkastream.co/)
+Voici les sites utilisant ce programme en ligne à ce jour : 
 
 [FullSpeed - DCT EU (dct-infra)](http://free.fullspeed.tv/)
